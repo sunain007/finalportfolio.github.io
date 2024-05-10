@@ -1,5 +1,5 @@
 function openimageinnewtab() {
-    var imageUrl = '/assets/ccna.jpg';
+    var imageUrl = 'ccna.jpg';
     window.open(imageUrl, '_blank');
 }
 
@@ -51,12 +51,12 @@ function topFunction() {
 
 function downloadpdf() {
     // Assuming your PDF file is named "example.pdf" and located in the same directory
-    var pdfURL = "/assets/Resume.pdf";
+    var pdfURL = "Resume.pdf";
 
     // Creating a temporary anchor element to trigger the download
     var link = document.createElement("a");
     link.href = pdfURL;
-    link.download = "/assets/Resume.pdf"; // You can change the name here if needed
+    link.download = "Resume.pdf"; // You can change the name here if needed
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
