@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact me</title>
+<style>
+  *{
+    margin:0;
+    padding:0;
+  }
+  .heading{
+    text-align: center;
+    background-color: white;
+    color: #66fcf1;
+  }
+  h1{
+    color: #66fcf1;
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+  .contactform {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    height: 100vh; /* Set height to 100% of viewport height */
+    background-color: #0b0c10; /* Set background color */
+}
+
+form {
+    width: 70%; /* Set form width */
+    padding: 20px; /* Add some padding */
+    background-color: #0b0c10; /* Set form background color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Make inputs and textarea fill the width of the form */
+    margin-bottom: 10px; /* Add some spacing between inputs */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #66fcf1; /* Set border color to red */
+    background-color: #0b0c10; /* Set input and textarea background color */
+    color: white; /* Set text color */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+button {
+    width: 10%; /* Make button fill the width of the form */
+    padding: 10px; /* Add some padding */
+    border: none;
+    background-color: #66fcf1; /* Set button background color */
+    color: white; /* Set text color */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: grey; /* Change button color on hover */
+}
+@media screen and (max-width: 850px){
+  .contactform{
+    flex-direction: column;
+  }
+  button{
+    width:40%;
+  }
+}
+
+</style>
+</head>
+<body>
+  
+      <div class="contactform">
+        <h1>Contact Me</h1>
+          <form onsubmit="sendemail(); reset(); return false;">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <textarea id="message" cols="30" rows="10" placeholder="How can I help you"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendemail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "f2021408007@gmail.com",
+            Password : "60927821D899CCB431506F6234DB09B506EE",
+            To : 'aijazsunain@gmail.com',
+            From : "f2021408007@gmail.com",
+            Subject : "New Email from your website",
+            Body : "Name: " + document.getElementById("name").value
+                 + "<br> Email:" + document.getElementById("email").value
+                 + "<br> Phone no: " + document.getElementById("phone").value
+                 + "<br> Message: " + document.getElementById("message").value
+        }).then(
+          message => alert("Message Sent Succesfully")
+        );
+          }
+        </script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:  #0b0c10;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+  
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  
+  /* the thin blue line */
+  
+  ::-webkit-scrollbar-track {
+    background: linear-gradient( 90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 
+    45%, #66fcf1 45%, #48eefc 55%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0) 
+    100%);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #48eefc;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 25px #48eefc;
+    -moz-box-shadow: 0px 0px 25px #48eefc;
+    box-shadow: 0px 0px 25px #48eefc;
+  }
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #0b0c10;
+    padding:0 20px;
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin:0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#c5c6c7;
+}
+nav ul li a:hover{
+    color:#66fcf1;
+    font-size: 1.05rem;
+}
+nav img{
+    width:15px;
+}
+nav #menu-btn{
+    background-color: #66fcf1;
+    color:#0b0c10;
+    padding: 10px;
+    border-radius: 20px;
+}
+#Education button{
+    background-color:red;
+    padding:10px;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+}
+#Education button:hover{
+    cursor:pointer;
+    background-color: #66fcf1;
+}
+.left{
+    font-size: 2rem;
+    color:#66fcf1;
+    font-weight: bold;
+}
+#firstsection{
+    display:flex;
+    justify-content: space-around;
+    margin:25px 0;
+}
+#firstsection .leftsection img{
+    width: 300px;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-right: 200px;
+}
+#firstsection div{
+    width:50%;
+}
+.leftsection{
+    margin:125px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.leftsection p{
+    font-size:1rem;
+    margin-right:190px;
+}
+.leftsection h1{
+    font-size:3rem;
+    margin-right:180px;
+}
+
+.rightsection p{
+    width:600px;
+    margin:90px 0;
+    margin-right:300px;
+    font-size: 1.5rem;
+    text-align:center;
+    color:#f5f5dc;
+}
+.sunain{
+    color:rgb(112, 112, 185);
+    font-weight: bold;
+}
+.downloadresumebutton{
+    cursor: pointer;
+    padding: 12px 30px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    background-color: #0b0c10;
+    border-color: red;
+    color:white;
+    margin-left:200px;
+    margin-top:-20px
+}
+.downloadresumebutton:hover{
+    border-color: #66fcf1;
+    transition-duration: 0.5s;
+    box-shadow: 0 0 35px #66fcf1;
+}
+main hr{
+    border:0;
+    background-color: #FFD700;
+    height:1.2px;
+    /* margin:80px 85px; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+.educationtable, .certtable, .educationtable td, .educationtable th, .certtable td, .certtable th{
+    border-bottom:10px solid #0b0c10;
+    border-collapse: collapse;
+    padding:15px;
+    background-color: #1f2833;
+}
+.educationtable td{
+    width:400px;
+}
+th{
+    font-size: 20px;
+}
+#Education{
+    text-align: center;
+}
+#Education .educationtable {
+    margin:auto;
+}
+.certtable{
+    margin:auto;
+}
+.certtable td{
+    width:300px;
+}
+.heading{
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    color:#66fcf1;
+    text-align: center;
+}
+.container{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.skill{
+    width:300px;
+    text-align: center;
+}
+.skill img{
+    width:80px;
+}
+.projtable{
+    margin: auto;
+}
+.projecttable img{
+    width:50px;
+}
+.projtable, .projtable  td, .projtable tr{
+    width: 700px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom:10px solid #0b0c10;
+    border-collapse: collapse;
+    padding:7px;
+}
+.grey{
+    color:grey;
+}
+footer{
+    background-color: rgb(51, 47, 47);
+    height:320px;
+    margin-top:50px;
+}
+footer .footheading h1{
+    font-weight: bold;
+    text-align: center;
+    padding:23px 122px;
+}
+footer .footerdisc p{
+    margin-left:200px;
+    margin-right:200px;
+    text-align: center;
+}
+footer .socialmedia {
+    margin-top:88px;
+    margin-left:33%;
+    display:flex;
+    width:500px;
+    justify-content: space-around;
+}
+footer .socialmedia .face,.insta,.link{
+    width:30px;
+}
+#myBtn {
+    /* Hidden by default */
+   position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#66fcf1; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 11px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  .socialmedialinks{
+    display: none;
+  }
+
+  /* Your existing CSS styles */
+
+/* Responsive adjustments for Android devices with max-width 850px */
+@media screen and (max-width: 850px) {
+    nav {
+        height: auto;
+        padding: 5px 20px; /* Adjust padding to make the navigation bar smaller */
+        flex-direction: column; /* Stack the navigation links vertically */
+        align-items: center;
+    }
+    nav ul {
+        display: flex; /* Show the navigation links */
+        flex-direction:row; /* Stack the navigation links vertically */
+        align-items: center;
+        padding: 2px; /* Remove padding from the list */
+        justify-content: space-around;
+    }
+    nav ul li {
+        margin: 10px 0;
+        padding: 5px;
+    }
+    nav ul li a {
+        font-size: 0.8rem;
+        justify-content: space-around;
+    }
+
+    /* Additional responsive adjustments can be added here */
+
+    /* Adjustments for other elements */
+    main {
+        padding: 0 10px; /* Adjust padding to make content area smaller */
+    }
+    #firstsection .leftsection img {
+        width: 150px; /* Adjust image size */
+        margin-top: 0; /* Remove margin */
+        margin-right: 0; /* Remove margin */
+    }
+    #firstsection{
+        display: flex;
+        flex-direction: column;
+    }
+    #firstsection .rightsection{
+        margin-top: -90px;
+    }
+    #firstsection .rightsection p{
+        font-size: 0.9rem;
+    }
+    #firstsection div {
+        width: 100%; /* Make sections full width */
+        margin: 20px 0; /* Add margin for better spacing */
+    }
+    .leftsection h1 {
+        margin-right: 0; /* Remove margin */
+        font-size: 1.3rem;
+    }
+    .leftsection p{
+        margin-right: 0;
+        font-size: 0.8rem;
+    }
+    .rightsection p {
+        margin-right: 0; /* Remove margin */
+        width: 100%; /* Make paragraphs full width */
+    }
+    #Education h1{
+        font-size: 1.3rem;
+    }
+    .educationtable th{
+        font-size:1rem;
+    }
+    .educationtable td{
+        font-size:0.6rem;
+    }
+    .certtable th{
+        font-size:1rem;
+    }
+    .certtable td{
+        font-size:0.6rem;
+    }
+    .educationtable td,
+    .educationtable th,
+    .certtable td,
+    .certtable th {
+        width: auto; /* Adjust table cell width */
+    }
+    .heading {
+        font-size: 1.2rem; /* Adjust heading font size */
+    }
+    .container {
+        flex-direction: column; /* Stack skills vertically */
+    }
+    #Skills h1{
+        font-size:1.3rem;
+    }
+    #Skills img{
+        width:50px;
+    }
+    #Skills p{
+        font-size:0.7rem;
+    }
+    .skill {
+        width: 100%; /* Make skills full width */
+        margin-bottom: 20px; /* Add margin for better spacing */
+    }
+    .projtable,
+    .projtable td,
+    .projtable tr {
+        width: auto; /* Adjust project table width */
+    }
+    #Projects h1{
+        font-size:1.3rem;
+    }
+    #Projects img{
+        width:40px;
+    }
+    #Projects td{
+        font-size:0.7rem;
+    }
+    footer {
+        display: none;
+    }
+    .socialmedialinks{
+        display: block;
+        margin-left: 60px;
+        margin-top: -30px;
+    }
+    .socialmedialinks img{
+        width:30px;
+        padding: 20px;;
+    }
+    .downloadresumebutton{
+        padding: 10px 15px;
+        margin-left: 80px;
+    }
+}

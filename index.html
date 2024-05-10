@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sunain's Protfolio</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href="/assets/hacker.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="left">Sunain's Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li><a id="aboutme" href="#firstsection">About me</a></li>
+                        <li><a id="education" href="#Education">Education</a></li>
+                        <li><a id="skills" href="#Skills">Skills</a></li>
+                        <li><a id="projects" href="#Projects">Projects</a></li>
+                        <li><a id="contact" href="javascript:function()">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/assets/up-arrow.png" alt="" style="width: 15px;"></button>
+            <section id="firstsection">
+                <div class="leftsection">
+                    <img src="/assets/me.jpg" alt="">
+                    <h1>Sunain Aijaz</h1>
+                    <p>@ : aijazsunain@gmail.com</p>
+                    <p># : +923219671115</p>
+                    <p># : +923180012700</p>
+                </div>
+                <div class="rightsection">
+                    <p>Hi there! I'm Sunain, a motivated UMT Lahore student studying cyber security. I have an interest for programming and a never-ending desire to strengthen our digital environment, therefore I'm always learning new things about site penetrations and network security. Several international certifications in cyber security have strengthened my journey and given me the ability to help create a safer online environment.</p>
+                    <button class="downloadresumebutton" onclick="downloadpdf()"><i class="fa fa-download"></i>Download Resume</button>
+                </div>
+            </section>
+            <div class="socialmedialinks">
+                <a href="https://www.facebook.com/sunain.jatt.5" target="_blank"><img class="face" src="/assets/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/sunain_jutt/" target="_blank"><img class="insta" src="/assets/instagram.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/sunain-aijaz-aa4914231/" target="_blank"><img class="link" src="/assets/linkedin.png" alt=""></a>
+            </div>
+            <hr>
+            <section id="Education">
+                <div class="heading">
+                    <h1>Education</h1>
+                </div>
+                <table class="educationtable">
+                    <tr>
+                        <th>Education</th><th>Duration</th>
+                    </tr>
+                    <tr>
+                        <td>Matric (Pre-Medical) - MTB Higher Secondary Schools</td><td>2017-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Fsc (Pre-Engineering) - MTB College</td><td>2019-2021</td>
+                    </tr>
+                    <tr>
+                        <td>BS-Cyber Security - UMT Lahore</td><td>2021-Onwards</td>
+                    </tr>
+                </table>
+                <div class="heading">
+                    <h1>Certifications</h1>
+                </div>
+                <table class="certtable">
+                    <tr>
+                        <th>Course</th><th>Year</th><th>Certificate</th>
+                    </tr>
+                    <tr>
+                        <td>Google Certified Cyber Security Expert</td><td>2023</td><td><a href="https://www.coursera.org/account/accomplishments/professional-cert/QXNV2NRYYVUN" target="_blank"><button>Certificate</button></a></td>
+                    </tr>
+                    <tr>
+                        <td>CCNA & Microsoft Azure</td><td>2023</td><td><button onclick="openimageinnewtab()">Certificate</button></td>
+                    </tr>
+                    <tr>
+                        <td>Linux Command Line</td><td>2023</td><td><a href="https://www.udemy.com/certificate/UC-9fee6158-2727-4b54-86db-5b0ba65c1944/" target="_blank"><button>Certificate</button></a></td>
+                    </tr>
+                    <tr>
+                        <td>ICIP</td><td>2023</td><td><a href="https://learn.opswatacademy.com/certificate/oX5z_1BqOg" target="_blank"><button>Certificate</button></a></td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section id="Skills">
+                <div class="heading">
+                    <h1>Skills</h1>
+                </div>
+                <div class="container">
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/python.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I am an intermediate-level Python developer proficient in data analysis and machine learning. With a strong foundation in Python programming, I have developed numerous AI projects during my academic tenure, showcasing my expertise in leveraging Python for innovative solutions.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/c++.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I am an expert in C++ with a focus on system programming. I have developed numerous management systems and other projects during my academic tenure, showcasing my proficiency in building efficient and reliable software solutions tailored to specific requirements.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/html.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I am proficient in HTML with a focus on web design, front-end development, and responsive design. Leveraging my intermediate-level expertise, I have created two portfolio websites that demonstrate my ability to craft visually appealing and user-friendly web experiences tailored to various devices and screen sizes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/css.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I possess intermediate-level proficiency in CSS, specializing in web design, front-end development, and responsive layouts. With hands-on experience in styling websites and ensuring optimal user experiences, I have effectively utilized CSS to enhance the aesthetics and functionality of web projects, including my own portfolio websites.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/js.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I'm proficient in front-end development using JavaScript at a beginner level. I've integrated basic JavaScript features into my portfolio website to enhance user interaction.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/sql.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I am proficient in SQL with a focus on database design and querying. With intermediate-level expertise, I have designed and implemented databases for various projects, including a booking system during my university studies. My skills include creating efficient database structures and writing complex queries to retrieve and manipulate data effectively.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/circuit.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I specialize in embedded systems development, particularly in projects involving circuit boards like Raspberry Pi Pico and ESP8266. With an intermediate level of expertise, I have implemented advanced applications such as a brute force password cracker and a malware analyzer. My experience in this field includes working with sensor interfacing, IoT applications, and optimizing performance for resource-constrained environments.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/forensics.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I'm a beginner in digital forensics, specializing in disk forensics. I've worked on a project analyzing malware on Windows devices, gaining insights into forensic techniques and methodologies.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/netsecurity.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I am an advanced practitioner in network security, proficient in intrusion detection, firewalls, NAT (Network Address Translation), and penetration testing. With comprehensive knowledge of relevant commands and techniques, I excel in securing networks against cyber threats and conducting thorough penetration tests to identify vulnerabilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/ai.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I am proficient in machine learning and AI programming using Python. With intermediate-level expertise, I have developed numerous AI projects, leveraging Python's libraries and frameworks to create innovative solutions. My experience includes applying machine learning algorithms to solve real-world problems and exploring various techniques to enhance AI performance.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="img">
+                            <img src="/assets/cyber-security.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p>I am an advanced cybersecurity practitioner with expertise in network security, ethical hacking, web penetration testing, and foundational concepts such as confidentiality, integrity, and availability (CIA). With a comprehensive understanding of cyber threats and defensive strategies, I excel in securing networks, identifying vulnerabilities, and mitigating risks to safeguard sensitive information and ensure robust cybersecurity posture.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="Projects">
+                <div class="heading">
+                    <h1>Projects</h1>
+                </div>
+                <div class="projecttable">
+                    <table class="projtable">
+                        <tr style="background-color: #1f2833;">
+                            <td><img src="/assets/c++.png" alt=""></td><td>Devaloped many managment projects in C++</td>
+                        </tr>
+                        <tr>
+                            <td>Creates a simple DataBase for a ticker management</td><td><img src="/assets/sql.png" alt=""></td>
+                        </tr>
+                        <tr style="background-color: #1f2833;">
+                            <td><img src="/assets/circuit.png" alt=""></td><td>Creates a Device to Brute force Pin passwords using raspberry Pi Pico</td>
+                        </tr>
+                        <tr>
+                            <td>Made a USB to put into a virus in windows using Raspberry</td><td><img src="/assets/circuit.png" alt=""></td>
+                        </tr>
+                        <tr style="background-color: #1f2833;">
+                            <td><img src="/assets/circuit.png" alt=""></td><td>Made a device which creates a Phishing attack for wifi</td>
+                        </tr>
+                        <tr>
+                            <td>Code many AI models in python including a JARVIS</td><td><img src="/assets/ai.png" alt=""></td>
+                        </tr>
+                        <tr style="background-color: #1f2833;">
+                            <td><img src="/assets/html.png" alt=""></td><td>Devaloped this portfolio website using HTML, CSS and JS</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footheading">
+                <h1>Sunain Aijaz</h1>
+            </div>
+            <div class="footerdisc">
+                <p>Welcome to my virtual space, where I'm thrilled to have the
+                    opportunity to share my professional journey with you. I'm
+                    an aspiring Cyber Security student with a passion and this
+                    website serves as a window into my
+                    skills, experiences, and accomplishments.</p>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/sunain.jatt.5" target="_blank"><img class="face" src="/assets/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/sunain_jutt/" target="_blank"><img class="insta" src="/assets/instagram.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/sunain-aijaz-aa4914231/" target="_blank"><img class="link" src="/assets/linkedin.png" alt=""></a>
+            </div>
+        </footer>
+        <script>
+            contact.addEventListener('click',function(){
+            window.open("contact.html","_self");
+        });
+        </script>
+    </body>
+</html>
